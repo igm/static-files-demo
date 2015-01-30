@@ -1,0 +1,8 @@
+applications:
+- name: noop-demo
+  memory: 512M
+  instances: 1
+  subdomain: noop-${random-word}
+  domain: cfapps.io
+  buildpack: https://github.com/igm/noop-buildpack
+
